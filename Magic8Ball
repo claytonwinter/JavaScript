@@ -1,3 +1,6 @@
+//From the CodeCademy Front-End Developer Pro Course
+//Engineers are different than developers. Developers shouldn't be called engineers. 
+
 let userName = 'Clayton';
 
 userName ? console.log( `Hello ${userName}!`) : console.log('Hello, stranger!')
@@ -39,22 +42,22 @@ console.log(`${userName}'s question of '${userQuestion}'. Magic Eightball's answ
 //Method Learned from Programming with Mosh YouTube
 let randomNumberTwo = Math.floor(Math.random() * 8);
 
-if (randomNumberTwo === 0) {
-  eightBallTwo = 'It is certain';
-} else if (randomNumberTwo === 1){
+if (randomNumberTwo === 0) 
+  eightBallTwo = 'It is certain'; 
+  else if (randomNumberTwo === 1)
   eightBallTwo = 'It is decidedly so';
-} else if (randomNumberTwo === 2){
+ else if (randomNumberTwo === 2)
   eightBallTwo = 'Reply hazy try again';
-} else if (randomNumberTwo === 3){
+ else if (randomNumberTwo === 3)
   eightBallTwo = 'Cannot predict now';
-} else if (randomNumberTwo === 4){
+ else if (randomNumberTwo === 4)
   eightBallTwo = 'Do not count on it';
-} else if (randomNumberTwo === 5){
+ else if (randomNumberTwo === 5)
   eightBallTwo = 'My sources say no';
-} else if (randomNumberTwo === 6){
+ else if (randomNumberTwo === 6)
   eightBallTwo = 'Outlook not so good';
-} else if (randomNumberTwo === 7){
+ else (randomNumberTwo === 7)
   eightBallTwo = 'Signs point to yes';
-}
+
 
 console.log(`But wait! There's more. A second Magic Eight Ball says: ${eightBallTwo}!`);
