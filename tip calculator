@@ -1,0 +1,13 @@
+const bill = 40
+const tip = bill >= 50 && bill <= 300 ? bill*.15 : bill*.2;
+console.log(`The tip is ${tip} and with the bill value of the ${bill}. The total is ${bill+tip}.`);
+
+if (bill <= 50) {
+    console.log(`The should tip is ${bill*.1} and with the bill value of the ${bill}. The total is ${bill+tip}.`);
+} else if ( bill >= 50 && bill <= 300 ){
+    console.log(`The tip is ${tip} and with the bill value of the ${bill}. The total is ${bill+tip}.`);
+} else if (bill <= 300){
+    console.log(`The tip is ${tip} and with the bill value of the ${bill}. The total is ${bill+tip}.`);
+} else {
+    console.log("WTF is going on!");
+}
