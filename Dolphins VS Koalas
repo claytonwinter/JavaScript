@@ -1,0 +1,18 @@
+const dolphinScoreAVG = (196+108+89)/3;
+const koalaScoreAVG = (96+108+89)/3;
+console.log(`The Dolphins have a score of ${dolphinScoreAVG}, and the Koalas have a score of ${koalaScoreAVG}.`);
+
+if (dolphinScoreAVG > koalaScoreAVG && dolphinScoreAVG >= 100) {
+    console.log(`The Dolphins Win! With a high score of ${dolphinScoreAVG}.`)
+} else if (( koalaScoreAVG > dolphinScoreAVG) && aboveHundredKoala) {
+    console.log(`The Koalas Win! With a highscore of ${koalaScoreAVG}.`)
+} else if (dolphinScoreAVG > koalaScoreAVG && dolphinScoreAVG < 100) {
+    console.log('Dolphins are not above 100 points.')
+} else if (koalaScoreAVG > dolphinScoreAVG && koalaScoreAVG < 100) {
+    console.log('Koalas are not above 100 points.')
+} else if (dolphinScoreAVG < 100 && koalaScoreAVG < 100){
+    console.log("Both teams lose.")
+} else if (dolphinScoreAVG === koalaScoreAVG && dolphinScoreAVG >= 100 && koalaScoreAVG >= 100) {
+    console.log('Both teams win.')
+} else { console.log('WTF is going on')
+}
