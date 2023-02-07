@@ -1,0 +1,49 @@
+const getSleepHours = day => {
+  switch (day) {
+   case 'Monday':
+     return 6
+   case 'Tuesday':
+     return 6
+   case 'Wednesday':
+     return 6
+   case 'Thursday':
+     return 6
+   case 'Friday':
+     return 6
+   case 'Saturday':
+     return 8
+   case 'Sunday':
+     return 7
+   default: 
+     return 'Error! Error! Error!'
+  } 
+ };
+ 
+ const getActualSleepHours = () => 
+   getSleepHours('Monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday') + getSleepHours('Sunday');
+  
+ 
+ console.log(getSleepHours('Monday'));
+ 
+ const getIdealSleepHours = idealHours => idealHours * 7;
+
+   
+
+ 
+ console.log(`My actual weekly sleep hours is ${getActualSleepHours()}`);
+ console.log(`My ideal number of sleep hours is ${getIdealSleepHours(7)}`);
+
+ const calculateSleepDebt = () => {
+   actualSleepHours = getActualSleepHours()
+   idealSleepHours = getIdealSleepHours(7)
+
+if (actualSleepHours === idealSleepHours) {
+  console.log("Good Job! You're getting the correct amount of sleep!")
+} else if (actualSleepHours < idealSleepHours) {
+  console.log("You need more sleep! Go to bed and get some rest! You need: " + (idealSleepHours - actualSleepHours) + " more hours of sleep!")
+} else {
+  console.log("You're getting more than then your ideal amount of sleep! You're sleeping too much. You are over sleeping by: " + (actualSleepHours - idealSleepHours) + "!")
+}
+};
+
+calculateSleepDebt();
