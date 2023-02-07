@@ -1,0 +1,18 @@
+// Switch statements can work instead of writing mulitple if else statments:
+const lifePhase = age => {
+switch (true) {
+  case age < 0:  return 'This is not a valid age.';
+  case age <= 3: return 'baby';
+  case age <= 12: return 'child';
+  case age <= 19: return 'teen';
+  case age <= 64: return 'adult';
+  case age <= 65: return 'senior citizen';
+  case age <= 141: return "LOL! Yeah Right! You're mortal and not a turle. People don't live that long."
+  default: return "This is not a valid age."
+}
+}
+
+console.log(lifePhase(141));
+
+
+
