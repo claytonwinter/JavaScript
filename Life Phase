@@ -1,18 +1,53 @@
-// Switch statements can work instead of writing mulitple if else statments:
-const lifePhase = age => {
+// writing the function using the switch statement
+const lifeSwitch = age => {
 switch (true) {
   case age < 0:  return 'This is not a valid age.';
   case age <= 3: return 'baby';
   case age <= 12: return 'child';
   case age <= 19: return 'teen';
   case age <= 64: return 'adult';
-  case age <= 65: return 'senior citizen';
+  case age <= 140: return 'senior citizen';
   case age <= 141: return "LOL! Yeah Right! You're mortal and not a turle. People don't live that long."
   default: return "This is not a valid age."
 }
 }
 
-console.log(lifePhase(141));
+console.log(lifeSwitch(141));
 
 
+//another way of using the if statement but short
+const lifeCycle = age => {
+  if (age < 0 ) {
+    return 'This is not a valid age';
+  }
+  return age < 3  ? 'baby' :
+         age < 13 ? 'child' :
+         age < 20 ? 'teen' :
+         age < 65 ? 'adult' : 
+         age < 141 ? 'senior citizen' : "LOL! Yeah Right! You're mortal and not a turle. People don't live that long."
+}
 
+console.log(lifeCycle(1111))
+
+
+// This is what this assignment is asking for
+const lifePhase = age => {
+
+if ( age < 0 ) {
+  return "This is not a valid age!" }
+if (age <= 3 ) {
+  return 'baby' }
+if (age <= 12) {
+  return 'child' }
+if (age <= 19) {
+  return 'teen' }
+if (age <= 64) {
+  return 'adult' }
+if (age <= 140) {
+  return 'senior citizen' }
+if (age > 140) {
+  return "LOL! Yeah Right! You're mortal and not a turle. People don't live that long." } 
+
+
+};
+console.log(lifePhase(-1));
