@@ -11,3 +11,38 @@ if (bill <= 50) {
 } else {
     console.log("WTF is going on!");
 }
+
+//updated after learning arrays and loops
+"use strict";
+
+//I think you should tip 10 per cent on bills lower than $50. 
+const bills = [40, 110, 302, 1000, 12, 56, 44];
+
+//creating the calcTip function
+const calcTip = function (bill) {
+    let tip = 0;
+    if (bill <= 50) {
+        return tip = bill * 0.1
+    } else if (bill >= 50 && bill < 300){
+        return tip = bill * 0.15
+    } else if ( bill > 301) {
+        return tip = bill * 0.2
+    } else return `This isn't working correctly`
+}
+
+//using the calcTip function in a loop
+for (let billLoop = 0; billLoop < bills.length; billLoop++){
+    console.log(calcTip(bills[billLoop]));
+}
+
+//printing everything and using the function
+for (let billLoop = 0; billLoop < bills.length; billLoop++) {
+    if (bills[billLoop] <= 50) {
+       console.log( `The tip is ${calcTip(bills[billLoop])} and with the bill value of the ${bills[billLoop]}. The total is ${bills[billLoop]+ calcTip(bills[billLoop])}.`); 
+       } else if (bills[billLoop] >= 50 && bills[billLoop] < 300) {
+        console.log(`The tip is ${calcTip(bills[billLoop])} and with the bill value of the ${bills[billLoop]}. The total is ${bills[billLoop]+ calcTip(bills[billLoop])}.`); 
+        } else if (bills[billLoop] > 301){
+        console.log( `The tip is ${calcTip(bills[billLoop])} and with the bill value of the ${bills[billLoop]}. The total is ${bills[billLoop]+ calcTip(bills[billLoop])}.`);
+    } else 
+    console.log("This isn't working correctly.")
+}
